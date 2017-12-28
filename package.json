@@ -2,6 +2,7 @@
   "name": "my-first-app",
   "version": "0.0.0",
   "license": "MIT",
+  "main":"server.js",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -9,11 +10,13 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    
-    "postinstall": "ng build --aot --target=production"
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "1.6.2",
+    "@angular/compiler-cli": "^5.0.0",
+    "@angular/language-service": "^5.0.0",
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
@@ -52,7 +55,7 @@
     "typescript": "~2.4.2"
   } ,
   "engines":{
-	"node":"6.11.1"
+	"node":"6.11.1",
 	"npm":"3.10.10"
   }
 }

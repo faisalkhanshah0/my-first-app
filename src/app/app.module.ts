@@ -6,6 +6,7 @@ import {HttpModule} from '@angular/http';
 import { AppComponent } from './app.component';
 import { DataService } from './data.service';
 
+
 @NgModule({
   declarations: [
     AppComponent
